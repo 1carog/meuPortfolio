@@ -1,0 +1,182 @@
+/* ESTILO GERAL */
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #051021;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contact button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #3B82F6;
+    color: #E5E5E5;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-contact button:hover{
+    box-shadow: 0px 0px 8px #3b83f6af;
+    transform: scale(1.05);
+}
+
+
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 25px 5%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #3B82F6;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover{
+    color: #E5E5E5;
+    transform: scale(1.10);
+    transition: .3s;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 270px;
+}
+
+.topo-do-site .txt-topo-site h1{
+    color: #E5E5E5;
+    font-size: 76px;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #E5E5E5;
+}
+
+.topo-do-site h6{
+    color: #3B82F6;
+    font-size: 24px;
+    margin: 90px 0;
+    margin-top: -15px;
+}
+
+.topo-do-site .img-topo-site {
+    transform: scale(3.0);
+}
+
+img{
+    width: 120px;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 22px;
+    }
+}
+
+/* SOBRE MIM */
+.sobre{
+    max-width: 1280px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.sobre .interface h2{
+    color: #E5E5E5;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+.sobre .txt-sobre-mim{
+    margin-top: 120px;
+    font-size: 20px;
+}
+
+.quadrado{
+    width: 1351px;
+    height: 1000px;
+    background-color: #E5E5E5;
+    display: block;
+    justify-content: center;
+    margin-top: 140px;
+}
+
+.sobre .meus-servicos{
+    margin-top: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
