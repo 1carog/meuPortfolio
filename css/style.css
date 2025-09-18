@@ -161,7 +161,6 @@ section.topo-do-site .flex{
     width: 1351px;
     height: 700px;
     background-color: #E5E5E5;
-    display: block;
 }
 
 .servicos .meus-servicos h2{
@@ -189,6 +188,7 @@ section.topo-do-site .flex{
     width: 800px;
     height: 400px;
     overflow: hidden;
+    margin-top: 50px;
 }
 
 .slides{
@@ -277,4 +277,45 @@ section.topo-do-site .flex{
 
 #radio3:checked ~ .navigation-auto .auto-btn3{
     background-color: #E5E5E5;
+}
+
+/* CONTATOS */
+.contatos{
+    background-color: #E5E5E5;
+    margin-top: 150px;
+}
+
+.titulo-contatos h2{
+    color: #051021;
+    text-align: center;
+    padding-top: 150px;
+    font-size: 50px;
+    border-top: -50px;
+}
+
+.meus-contatos img{
+    width: 150px;
+    margin-top: -600px;
+    border-radius: 15px;
+    gap: 80px;
+}
+
+.meus-contatos{
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* RODAPÉ */
+.contatos .fundo{
+    padding-top: 550px;
+    display: flex;
+    justify-content: center;
+}
+
+.rodape {
+  background-color: #0c1626; /* Cor de fundo escura, como na sua imagem */
+  color: #E5E5E5; /* Cor do texto branca */
+  text-align: center; /* Centraliza o texto horizontalmente */
+  padding: 20px; /* Adiciona espaçamento interno para dar altura */
 }
