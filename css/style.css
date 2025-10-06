@@ -319,3 +319,19 @@ section.topo-do-site .flex{
   text-align: center; /* Centraliza o texto horizontalmente */
   padding: 20px; /* Adiciona espaçamento interno para dar altura */
 }
+
+@media screen and (max-width: 1020px){
+    /* CLASSES GERAIS */
+    .flex{
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    /* CABEÇALHO */
+    .desktop, .btn-contact{
+        display: none;
+    }
+}
