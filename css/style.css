@@ -1,0 +1,435 @@
+/* ESTILO GERAL */
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #051021;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.interface .btn-contact button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #3B82F6;
+    color: #E5E5E5;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.interface .btn-contact button:hover{
+    box-shadow: 0px 0px 8px #3b83f6af;
+    transform: scale(1.05);
+}
+
+
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 25px 5%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #3B82F6;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover{
+    color: #E5E5E5;
+    transform: scale(1.10);
+    transition: .3s;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 270px;
+}
+
+.topo-do-site .txt-topo-site h1{
+    color: #E5E5E5;
+    font-size: 76px;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #E5E5E5;
+}
+
+.topo-do-site h6{
+    color: #3B82F6;
+    font-size: 24px;
+    margin: 90px 0;
+    margin-top: -15px;
+}
+
+.topo-do-site .img-topo-site {
+    transform: scale(3.0);
+}
+
+.interface img{
+    width: 120px;
+}
+
+.topo-do-site img{
+    width: 120px;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 22px;
+    }
+}
+
+/* SOBRE MIM */
+.sobre{
+    max-width: 1280px;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.sobre .interface h2{
+    color: #E5E5E5;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 100px;
+}
+
+.sobre .txt-sobre-mim{
+    margin-top: 80px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.sobre .quadrado{
+    width: 1351px;
+    height: 300px;
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    margin-top: 160px;
+}
+
+.sobre .meus-servicos{
+    margin-top: 300px;
+}
+
+/* FORMAÇÃO ACADÊMICA */
+.formacao{
+    color: #E5E5E5;
+    text-align: center;
+}
+
+.formacao h2{
+    margin-top: 200px;
+}
+
+.formacao .universidade h4{
+    margin-top: 150px;
+}
+
+.formacao .escola h4{
+    margin-top: 60px;
+}
+
+.formacao .escola{
+    margin-bottom: 230px;
+}
+
+/* SERVIÇOS */
+.servicos .retangulo{
+    width: 1351px;
+    height: 700px;
+    background-color: #E5E5E5;
+}
+
+.servicos .meus-servicos h2{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 150px;
+
+}
+
+.servicos .lista{
+    padding-left: 200px;
+    padding-top: 90px;
+}
+
+/* PORTFOLIO */
+.portfolio h2{
+    color: #E5E5E5;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 95px;
+}
+
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+}
+
+.slide img{
+    width: 800px;
+    /* padding-top: 100px; */
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #E5E5E5;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 20px;
+}
+
+.manual-btn:hover{
+    background-color: #E5E5E5;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .second{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .third{
+    margin-left: -50%;
+}
+
+.navigation-auto div{
+    border: 2px solid #3B82F6;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 425px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 20px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #E5E5E5;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #E5E5E5;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #E5E5E5;
+}
+
+/* CONTATOS */
+.contatos{
+    background-color: #E5E5E5;
+    margin-top: 150px;
+}
+
+.titulo-contatos h2{
+    color: #051021;
+    text-align: center;
+    padding-top: 150px;
+    font-size: 50px;
+    border-top: -50px;
+}
+
+.meus-contatos img{
+    width: 150px;
+    margin-top: -600px;
+    border-radius: 15px;
+    gap: 80px;
+}
+
+.meus-contatos{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+/* Container do formulário */
+#contato {
+  background-color: #0a1f44;
+  padding: 40px;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 0 auto;
+  color: #E5E5E5;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* Título */
+#contato h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #4db8ff; /* azul claro para destaque */
+}
+
+/* Labels */
+#contato label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Inputs e textarea */
+#contato input,
+#contato textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Textarea maior */
+#contato textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Botão */
+#contato button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4db8ff;
+  border: none;
+  border-radius: 5px;
+  color: #E5E5E5;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#contato button:hover {
+  background-color: #3399ff;
+}
+
+/* Mensagem de sucesso/erro */
+.mensagem {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.mensagem.sucesso {
+  color: #00ff99;
+}
+.mensagem.erro {
+  color: #ff4d4d;
+}
+
+
+/* RODAPÉ */
+.contatos .fundo{
+    padding-top: 550px;
+    display: flex;
+    justify-content: center;
+}
+
+.rodape {
+  background-color: #E5E5E5;
+  color: #0c1626;
+  text-align: center;
+  padding: 20px;
+}
+
+@media screen and (max-width: 1020px){
+    /* CLASSES GERAIS */
+    .flex{
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    /* CABEÇALHO */
+    .desktop, .btn-contact{
+        display: none;
+    }
+}
